@@ -18,6 +18,23 @@
 .price-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px}.price-card{border:1px solid var(--line);border-radius:34px;padding:36px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(240,196,106,.07))}.price-card h3{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold2)}.price{font-size:62px;font-weight:900;color:var(--gold2);margin:12px 0}.price small{font-size:18px;color:var(--muted)}.list{display:grid;gap:13px;margin:24px 0 28px}.list span{color:var(--gold2);font-weight:900;margin-right:8px}
 .location{min-height:620px;display:flex;align-items:center;background:url("assets/location.jpg") center/cover no-repeat;position:relative}.location:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,11,20,.96),rgba(6,11,20,.65) 45%,rgba(6,11,20,.26))}.location-card{position:relative;z-index:2;max-width:560px;border:1px solid var(--line);background:rgba(6,11,20,.72);backdrop-filter:blur(14px);border-radius:34px;padding:42px}.location-card h2{font-family:"Cormorant Garamond",serif;font-size:56px;line-height:1.02;margin-bottom:16px}.location-card p{color:#d9deea;line-height:1.85;margin-bottom:26px}
 .cta{padding:90px 0;background:linear-gradient(135deg,#050810,#101827)}.cta-box{text-align:center;border:1px solid var(--line);border-radius:38px;padding:62px 28px;background:radial-gradient(circle at top,rgba(240,196,106,.18),transparent 32%),rgba(255,255,255,.025)}.cta-box h2{font-family:"Cormorant Garamond",serif;font-size:clamp(42px,5vw,68px);line-height:1.02;margin-bottom:16px}.cta-box p{color:var(--muted);font-size:18px;margin-bottom:30px}footer{padding:42px 0;border-top:1px solid var(--line);color:var(--muted)}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;display:none}
+
+.footer-premium{background:#100c08;border-top:1px solid rgba(240,196,106,.18);padding:70px 0 24px;color:#d8d0c4}
+.footer-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:50px;align-items:start}
+.footer-brand{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:700;letter-spacing:.04em;color:#fff;margin-bottom:12px}
+.footer-brand span{color:var(--gold2)}
+.footer-desc{color:#b9afa3;line-height:1.75;margin-bottom:24px}
+.social-round{display:flex;gap:12px}
+.social-round a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff}
+.footer-title{font-size:15px;font-weight:900;letter-spacing:.05em;color:#fff;margin-bottom:22px;text-transform:uppercase}
+.footer-list{display:grid;gap:13px;color:#cfc7bd;font-size:15px}
+.footer-join{margin-top:24px}
+.map-box{border-radius:16px;overflow:hidden;border:1px solid rgba(240,196,106,.2);height:220px;background:url("assets/location.jpg") center/cover no-repeat;position:relative}
+.map-box:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.24)}
+.map-label{position:absolute;left:14px;top:14px;background:#fff;color:#1976d2;border-radius:6px;padding:9px 13px;font-weight:800}
+.footer-copy{text-align:center;color:#8f867c;font-size:13px;border-top:1px solid rgba(255,255,255,.08);margin-top:42px;padding-top:22px}
+@media(max-width:920px){.footer-premium{padding:54px 0 24px}.footer-grid{grid-template-columns:1fr;gap:38px}.footer-brand{font-size:38px}.map-box{height:250px}}
+
 @media(max-width:920px){.navlinks,.nav .btn{display:none}.nav{height:66px}.hero{background-position:62% center}.hero:before{background:linear-gradient(90deg,rgba(6,11,20,.95),rgba(6,11,20,.82) 55%,rgba(6,11,20,.48)),linear-gradient(to top,rgba(6,11,20,.9),transparent 45%)}.hero-content{padding:118px 0 70px}.hero h1{font-size:50px}.hero p{font-size:16px}.hero-actions .btn{width:100%;min-height:56px}.hero-points{grid-template-columns:1fr}.section{padding:70px 0}.features,.room-grid,.story-wrap,.gallery-grid,.price-wrap{grid-template-columns:1fr}.feature{text-align:left;display:grid;grid-template-columns:70px 1fr;gap:18px;min-height:auto}.feature .icon{margin:0}.feature h3{font-size:27px}.room-img{height:330px}.story-card{padding:30px}.story-img img{height:420px}.checks{grid-template-columns:1fr}.gallery-main img,.gallery-small img{height:340px}.price{font-size:52px}.location{min-height:620px;background-position:60% center}.location-card{padding:30px}.location-card h2{font-size:44px}.foot{display:block;text-align:center}.foot .logo{margin-bottom:10px}.wa-float{display:block}}
 </style>
 </head>
@@ -31,7 +48,41 @@
 <section class="section dark" id="price"><div class="container"><div class="head"><div class="kicker">Pakej Booking</div><h2>Pilih tarikh, terus semak melalui WhatsApp.</h2><p>Harga ini placeholder demo. Boleh tukar ikut harga sebenar homestay client.</p></div><div class="price-wrap"><div class="price-card"><h3>Hari Biasa</h3><div class="price">RM280 <small>/ malam</small></div><div class="list"><div><span>✓</span>Rumah kampung lengkap</div><div><span>✓</span>Ruang tamu & dapur</div><div><span>✓</span>Parking luas</div><div><span>✓</span>Sesuai keluarga kecil</div></div><a class="btn btn-green" href="https://wa.me/60123456789">Semak Tarikh</a></div><div class="price-card"><h3>Weekend / Cuti</h3><div class="price">RM380 <small>/ malam</small></div><div class="list"><div><span>✓</span>Sesuai family gathering</div><div><span>✓</span>Ruang santai malam</div><div><span>✓</span>Halaman luas</div><div><span>✓</span>Booking melalui WhatsApp</div></div><a class="btn btn-gold" href="https://wa.me/60123456789">WhatsApp Booking</a></div></div></div></section>
 <section class="location"><div class="container"><div class="location-card"><div class="kicker">Lokasi</div><h2>Dekat dengan alam, mudah untuk tetamu.</h2><p>Lokasi tenang dengan akses mudah untuk keluarga, rombongan kecil dan tetamu yang mahu rehat dari suasana bandar.</p><a class="btn btn-gold" href="https://maps.google.com">Buka Google Maps</a></div></div></section>
 <section class="cta"><div class="container cta-box"><h2>Nak semak tarikh kosong?</h2><p>Tekan WhatsApp dan terus tanya availability untuk tarikh anda.</p><a class="btn btn-green" href="https://wa.me/60123456789">WhatsApp Sekarang</a></div></section>
-<footer><div class="container foot"><div class="logo">Kampung <span>Senja</span></div><div>© 2026 Kampung Senja Homestay</div></div></footer>
+
+<footer class="footer-premium">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">KAMPUNG <span>SENJA</span></div>
+      <p class="footer-desc">Penginapan kampung premium untuk keluarga, reunion dan percutian hujung minggu.</p>
+      <div class="social-round">
+        <a href="#">f</a>
+        <a href="#">ig</a>
+        <a href="#">tk</a>
+        <a href="https://wa.me/60123456789">wa</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Hubungi Kami</div>
+      <div class="footer-list">
+        <div>📞 +60 12-345 6789</div>
+        <div>✉️ kampungsenja@gmail.com</div>
+        <div>📍 Melaka, Malaysia</div>
+      </div>
+      <div class="footer-title" style="margin-top:36px">Dapatkan Info Terkini</div>
+      <p class="footer-desc">Dapatkan promosi dan info tarikh kosong terus ke WhatsApp anda.</p>
+      <div class="footer-join">
+        <a class="btn btn-green" href="https://wa.me/60123456789">Join WhatsApp Channel</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Peta Lokasi</div>
+      <a href="https://maps.google.com" target="_blank" class="map-box">
+        <span class="map-label">Maps ↗</span>
+      </a>
+    </div>
+  </div>
+  <div class="container footer-copy">© 2026 Kampung Senja Homestay. Semua Hak Cipta Terpelihara.</div>
+</footer>
 <div class="wa-float"><a class="btn btn-green" href="https://wa.me/60123456789">WhatsApp</a></div>
 </body>
 </html>
